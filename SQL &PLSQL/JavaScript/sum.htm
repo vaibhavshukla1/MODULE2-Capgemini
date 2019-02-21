@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script>
+			function mysum(){
+			var a=parseInt(document.getElementById("x").value);
+			var z=parseInt(document.getElementById("y").value);
+			var u=a + z;
+			document.getElementById("answer").innerHTML=u;
+			}
+		</script>
+	</head>
+	
+	<body>
+		Enter First Number  : <input type="text" name="number" id="x" ><br>
+		Enter Second Number : <input type="text" name="number" id="y" ><br>
+		<button onclick="mysum()">ADD</button>
+		<p id="answer"></p>
+	</body>
+</html>

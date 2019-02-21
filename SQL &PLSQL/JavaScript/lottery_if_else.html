@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script>
+			function lottery(){
+			var a=parseInt(document.getElementById("q").value);
+			if(a==1){
+				document.getElementById("result").innerHTML="Better Luck Next Time...";
+			}
+			else if(a==2){
+				document.getElementById("result").innerHTML="Better Luck Next Time...";
+			}
+			else if(a==3){
+				document.getElementById("result").innerHTML="...YOU WON...";
+			}
+			else{
+				document.getElementById("result").innerHTML="Wrong Choice";
+			}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<p>Enter 1,2,3 To Play Lottery Game</p><br><br>
+		<input type="text" name="number" id="q"><br><br>
+		<button onclick="lottery()">LUCK</button><br><br>
+		<p id="result"></p>
+	</body>
+</html>

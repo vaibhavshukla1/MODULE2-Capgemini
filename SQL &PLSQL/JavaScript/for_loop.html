@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			function table(){
+			var i;
+			var k="";
+			var num=parseInt(document.getElementById("n").value);
+			for(i=1;i<=10;i++){
+				k+= ""+(i*num)+"<br>";	
+			}
+			document.getElementById("print").innerHTML=k;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<p>Enter number for printing table</p><br><br>
+		<input type="text" name="number" id="n"><br><br>
+		<button onclick="table()">TABLE</button><br><br>
+		<p id="print"></p>
+	</body>
+</html>
