@@ -15,11 +15,11 @@
 						if(pas!=""){
 							if(r==pas){
 								if(o!=""){
-									if(mo!="[789][0-9]{9}"){
-										alert("wrong mobile number");
+									if(mo!="/^\d{10}$/.test(val)"){
+									alert("Account Created Successfully");
 									}
 									else{
-									prompt("Account Created Successfully");
+										alert("wrong mobile number");
 									}
 								}
 								else{
