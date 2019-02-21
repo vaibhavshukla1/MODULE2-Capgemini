@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<script>
+			function validate(){
+			var a=document.getElementById("fname").value;
+			var b=document.getElementById("lname").value;
+			var c=document.getElementById("uname").value;
+			var pas=document.getElementById("pass").value;
+			var r=document.getElementById("re").value;
+			var o=document.getElementById("dob").value;
+			var mo=document.getElementById("mob").value;
+			if(a!=""){
+				if(b!=""){
+					if(c!=""){
+						if(pas!=""){
+							if(r==pas){
+								if(o!=""){
+									if(mo!="[789][0-9]{9}"){
+										alert("wrong mobile number");
+									}
+									else{
+									prompt("Account Created Successfully");
+									}
+								}
+								else{
+									alert("date of birth cannot be empty");
+								}
+							}
+							else{
+								alert("wrong confirm password");
+							}
+						}
+						else{
+							alert("password cannot empty")
+						}
+					}
+					else{
+						alert("user name cannot empty");
+					}
+				}
+				else{
+					alert("Last name cannot Empty");
+				}
+			}
+			else{
+				alert("First name cannot Empty");
+			}
+			}
+		</script>
+	</head>
+	<body>
+	<h3>CREATE YOUR GOOGLE ACCOUNT</h3>
+	<div>
+		<form>
+			Name<br>
+			<input type="text" name="firstname" size=10 id="fname"> &nbsp&nbsp&nbsp <input type="text" name="lastname" size=10 id="lname"> <br> <br>
+			Choose Your Username <br>
+			<input type="text" name="username" id="uname">@gmail.com <br> <br>
+			Create a password <br>
+			<input type="password" name="password" id="pass"> <br> <br>
+			Confirm your password <br>
+			<input type="password" name="password" id="re"> <br> <br>
+			Birthday <br>
+			<input type="date" name="date of birth" id="dob"><br><br>
+			Gender <br>
+			<input type="radio" name="gender" value="male" id="q1"> Male<br>
+			<input type="radio" name="gender" value="female" id="q2"> Female<br>
+			<input type="radio" name="gender" value="other" id="q3"> Other<br><br>
+			Mobile Number<br>
+			<input type="number" name="mobile number" pattern="[789][0-9]{9}" id="mob"><br><br>
+			<button onclick="validate()">SUBMIT</button>
+		</form>
+		</div>
+	</body>
+	<style>
+		input[type=submit]:hover{
+		background-color: #37D028;
+		}
+		
+		input[type=submit]{
+		background-color: #21AAB0;
+		color: white;
+		}
+		
+		form{
+		margin-left: 900px;
+		}
+		
+		div{
+		padding: 50px;
+		background-color: #f2f2f2;
+		}
+		
+		h3{
+		margin-left: 900px;
+		}
+		
+	</style>
+</html>
