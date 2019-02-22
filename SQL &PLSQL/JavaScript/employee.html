@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<script>
+			function calcSalary(){
+				var ename=document.getElementById("username").value;
+				var gross=parseInt(document.getElementById("salary").value);
+				var sal=document.getElementById("salary").value;
+				var lname=document.getElementById("lastname").value;
+				var add=document.getElementById("address").value;
+				if(add!=""){
+					if(lname!=""){
+						if(ename!=""){
+							if(sal!=""){
+								if(gross<180000){
+									tax=0;
+									newsal=gross-tax;
+									document.getElementById("result").innerHTML="<u><b>YOUR SALARY SLIP GENERATED SUCCESSFULLY</b></u><br><br>"+"<u>"+ename+" "+lname+"</u>"+" <br> Tax to be paid : Rs."+tax+"<br> Accounted Salary : Rs."+newsal+"<br><br>CONGRATULATION SALARY ACCOUNTED SUCCESSFULLY!";
+								}
+						
+								if(gross>=180000&&gross<=300000){
+									tax=(0.1*gross);
+									newsal=gross-tax;
+									document.getElementById("result").innerHTML="<u><b>YOUR SALARY SLIP GENERATED SUCCESSFULLY</b></u><br><br>"+"<u>"+ename+" "+lname+"</u>"+" <br> Tax to be paid : Rs."+tax+"<br> Accounted Salary : Rs."+newsal+"<br><br>CONGRATULATION SALARY ACCOUNTED SUCCESSFULLY!";
+								}
+						
+								if(gross>300000&&gross<=500000){
+									tax=(0.2*gross);
+									newsal=gross-tax;
+									document.getElementById("result").innerHTML="<u><b>YOUR SALARY SLIP GENERATED SUCCESSFULLY</b></u><br><br>"+"<u>"+ename+" "+lname+"</u>"+" <br> Tax to be paid : Rs."+tax+"<br> Accounted Salary : Rs."+newsal+"<br><br>CONGRATULATION SALARY ACCOUNTED SUCCESSFULLY!";
+								}
+						
+								if(gross>500000){
+									tax=(0.3*gross);
+									newsal=gross-tax;
+									document.getElementById("result").innerHTML="<u><b>YOUR SALARY SLIP GENERATED SUCCESSFULLY</b></u><br><br>"+"<u>"+ename+" "+lname+"</u>"+" <br> Tax to be paid : Rs."+tax+"<br> Accounted Salary : Rs."+newsal+"<br><br>CONGRATULATION SALARY ACCOUNTED SUCCESSFULLY!";
+								}
+							}else{
+								alert("Salary cannot be enpty");
+							}
+						}else{
+							alert("UserName cannot be empty");
+						}
+					}else{
+						alert("last name cannot be empty");
+					}
+				}else{
+					alert("adderess cannot be empty");
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+	
+		<div>
+			<h2 align="center">Employee Details</h2>
+			<pre>
+				<b>Title<b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select><option value="mr">Mr.</option><option value="ms">Ms.</option></select><br><br>
+				<b>FirstName<b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="username"/><br><br>
+				<b>LastName<b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="lastname"/><br><br>
+				<b>GrossSalary<b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" id="salary"/><br><br>
+				<b>Address<b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="address"/><br><br>
+				<button onclick="calcSalary()">SALARY</button><br><br>
+				<p id="result"></p>
+			</pre>
+		</div>
+	
+	</body>
+	
+	
+	<style>
+		div{
+			margin-left: 300px;
+			margin-right: 300px;
+			background-color:#16E7BB;
+			border: 1px solid black;
+		}
+	</style>
+
+</html>
