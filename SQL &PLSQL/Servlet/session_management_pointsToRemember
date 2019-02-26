@@ -1,0 +1,33 @@
+---------------Session Management-------------------
+
+
+  Examples of session management:-
+  -online shopping
+  -userid password
+  -chatting
+
+http - stateless protocol
+
+
+==Ways to have session mangement==
+HttpSession
+Cookie
+URL rewriting
+hidden form
+
+
+==Way to create Http Session==
+HttpSession=request.getSession(true);
+HttpSession=request.getSession(false);
+HttpSession=request.getSession();
+
+
+==Cookie==
+request.setAttribute
+context.setAttribute
+session.setAttribute
+
+
+* context same for all the browser and donot change if request send and recieved is changed to null.
+* request changes on basis of request send and recieved.
+* session changes on each browser and donot change if request send and recieved is changed to null, but changes in other browser.
