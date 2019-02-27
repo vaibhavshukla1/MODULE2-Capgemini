@@ -1,0 +1,65 @@
+------------------------------JSP-------------------------
+
+<%    %>
+<%@   %>
+<%=   %>
+
+*  Simple and Outdates
+
+model 1 (Java)= writing buisness logic and presentation layer in single page
+
+model 2= business logic - Servlet - layer used by developer
+	 presentation   - JSP     - layer used by ui designer
+
+Servlet = html code is embedded in java code.
+JSP = java code is embedded in html.
+
+
+* JSP Scripting Elements----------
+
+1. <%  %> scriptlet tag
+
+<html>
+	<body>
+		<%  java code   %>
+	</body>
+</html>
+
+2. <%!  %>  declaration tag (declaring values)
+   eg :  <%! int j; %>
+
+3. <%=  %> expression tag
+   eg : <% for(j=0;j<5;j++){ %> 
+	<%=j %>  
+	<% } %>
+
+
+
+POINTS TO COVER---------------
+
+1.  Forms of Scripting element
+2.  Predefined Variable  (out, page, application---(Servlet Context), config----(Servlet Config), exception, request, response, session)
+3.  Example Using Scription Element
+4.  JSP Directives  <%@  %> for importing any package
+5.  Page Directives
+6.  Include directives
+7.  Jsp Action
+8.  Jsp:include action
+9.  Jsp:forward action
+10. Java Standard Templet Library (JSTL)
+11. What is JSTL
+12. Installing JSTL
+13. Using Expression Language
+14. Using JSTL
+
+
+
+-----------Steps of JSP
+
+translation
+compilation
+load class in web container
+create instance
+init
+service
+destroy
