@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validate(){
+	var a=document.getElementById("firstname").value;
+	var b=document.getElementById("lastname").value;
+	if(a==""||b==""){
+		alert("All Fields Are Mendatory");
+	}
+	
+}
+</script>
+</head>
+<body>
+	<form action="formjsp.jsp">
+		FirstName:<input type="text" name="fname" id="firstname" /><br> LastName:<input
+			type="text" name="lname" id="lastname" /><br><button type="submit" onclick="validate()">SUBMIT</button>
+
+	</form>
+</body>
+</html>
