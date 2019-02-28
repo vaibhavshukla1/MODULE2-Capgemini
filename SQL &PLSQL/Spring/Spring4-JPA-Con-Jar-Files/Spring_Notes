@@ -1,0 +1,24 @@
+-----------------------------------SPRING FRAMEWORK--------------------------------------------
+
+1. container : 3 containers ( BeanFactory, ApplicationContext, WebApplicationContext )
+
+	BeanFactory - deprecated
+	ApplicationConext - Internationalization (eg=currency on basis of country), event, AOP...
+
+srping jars
+
+-------------EXAMPLE
+
+Employee.java
+applicationcontext.xml-----------------------------spring bean configuration file
+
+Root tag as <beans>
+	<beans>
+	<bean></bean>
+	</beans>
+
+Main.java
+
+
+Q - Setter Injection
+Q - Constructor Injection
