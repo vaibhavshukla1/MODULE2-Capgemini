@@ -31,3 +31,12 @@ Q - Constructor Injection
 3. Request Mapping : The URL and requst type that a method is tied to
 4. View Resolver : Used to locate JSP page or whatever view we are using
 5. Servlet-config : Configuration file per DispatcherServlet 
+
+
+------->Spring MVC CRUD operation
+------->Spring MVC Vaalidation
+------->Maven
+------->Request Param
+------->Spring-Model-Interface
+
+--------------------------------------------------------xxxxxx------------------------------------------------------------------------
