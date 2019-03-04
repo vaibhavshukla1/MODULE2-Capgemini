@@ -22,3 +22,12 @@ Main.java
 
 Q - Setter Injection
 Q - Constructor Injection
+
+
+*******************Model View Controller*********************
+
+1. DispatcherServlet : The entry / configuration point for the Application
+2. Controller : Command Pattern object that handles the request and determines which vie to route to
+3. Request Mapping : The URL and requst type that a method is tied to
+4. View Resolver : Used to locate JSP page or whatever view we are using
+5. Servlet-config : Configuration file per DispatcherServlet 
